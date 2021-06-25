@@ -1,7 +1,7 @@
 .none{
     display: none;
 }
-.left{
+.right{
     display: flex;
     justify-content: space-evenly;
     width: 300px;
@@ -9,4 +9,32 @@
 }
 .settings{
     margin: 40px;
+}
+.cercle{
+    height: 30px;
+    background-color: green;
+    width: 30px;
+    border-radius: 50%;
+}
+.filtres{
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrondi_div{
+    border-radius: 20px;
+}
+.centre2{
+    margin: auto;
+}
+div{
+    border: 1px solid black
+}
+body{
+    font-family: 'Raleway', sans-serif;
 }

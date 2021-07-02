@@ -48,18 +48,17 @@ body{
 }
 .img_centre{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     position: relative;
+    float: left;
+    width: 100%;
 }
 .img_gauche{
     display: flex;
-    width: 60vw;
 }
 .img_droite{
     display: flex;
     flex-direction: column;
-    width: 40vw;
 }
 
 

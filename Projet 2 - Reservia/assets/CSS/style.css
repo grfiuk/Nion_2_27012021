@@ -11,12 +11,12 @@
     align-items: center;
 }
 .settings{
-    margin: 40px;
+    margin: 0px 30px 30px 30px;
     position: relative;
 }
 .cercle{
     height: 30px;
-    background-color: green;
+    background-color:  #DEEBFF;
     width: 30px;
     border-radius: 50%;
 }
@@ -36,43 +36,79 @@
 .centre2{
     margin: auto;
 }
+/*
 div{
     border: 1px solid blue
-}
+}*/
 body{
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
 }
 .haut{
-    padding-top: 30px;
-    border-top: 1px solid red;
+    position: relative;
+    padding-top: 25px;
+    border-top: 5px solid  #0065FC;
+    color:  #0065FC;
 }
 .img_centre{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     float: left;
+    box-sizing: content-box;
     width: 100%;
 }
 .img_gauche{
     display: flex;
+    box-sizing: content-box;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 70%;
+    flex-wrap: wrap;
 }
 .img_droite{
     display: flex;
+    box-sizing: content-box;
+    width: 25%;
     flex-direction: column;
+    border-radius: 20px;
+    background-color:#F2F2F2;
 }
-
-
-.container{
-    position: relative;
+.radius_gauche{
+    border-radius: 10px 0px 0px 10px;
+    background-color:#F2F2F2;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+}
+.rechercher{
+    height: 30px;
     display: flex;
+    align-items: center;
 }
-.parent{
-    height: 300px;
-    position: relative;
+.champs_rech{
+    height: 28px;
+    width: 150px;
+    border: 1px solid gray;
 }
-.enfant{
-    height: 500px;
-    position: absolute;
-    top: 70px;
-    border: 2px red solid;
+.btn_rech{
+    height: 30px;
+    width: 100px;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+.txt_colle{
+    margin-bottom: 0;
+}
+figure{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+.icon{
+    color: #0065FC;
 }

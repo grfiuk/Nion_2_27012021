@@ -129,6 +129,9 @@ figure{
 .icon{
     color: #0065FC;
 }
+.container_populaires{
+    padding: 15px;
+}
 .container_populaires img{
     height: 100px;
     width: 100px;

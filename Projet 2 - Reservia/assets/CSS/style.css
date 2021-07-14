@@ -136,3 +136,20 @@ figure{
     height: 100px;
     width: 100px;
 }
+.container_activite{
+}
+.container_img_act figure{
+    height: 100px;
+    width: 200px;
+}
+.container_img_act{
+    display: flex;
+}
+.img_activite_S{
+    height: 100px;
+    width: 200px;
+}
+.img_activite_B{
+    height: 500px;
+    width: 200px;
+}

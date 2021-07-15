@@ -46,10 +46,13 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.right span{
+    padding-top: 17px;
+}
 .haut{
     position: relative;
-    padding-top: 25px;
-    top: 8px;
+    padding-top: 10px;
+    top: 2px;
     border-top: 4px solid  #0065FC;
     color:  #0065FC;
 }
@@ -136,9 +139,11 @@ figure{
     width: 100px;
 }
 .container_activite{
+    display: flex;
     background-color: green;
+    position: relative;
     height: 600px;
-    box-sizing: content-box;
+    width: 1000px;
 }
 .container_img_act figure{
     height: 100px;

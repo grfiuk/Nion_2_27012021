@@ -140,23 +140,31 @@ figure{
 }
 .container_activite{
     display: flex;
-    background-color: green;
+    flex-direction: column;
     position: relative;
+    box-sizing: content-box;
     height: 600px;
-    width: 1000px;
-}
-.container_img_act figure{
-    height: 100px;
-    width: 200px;
+    width: 1500px;
+    padding-top: 90px;
 }
 .container_img_act{
     display: flex;
+    position: relative;
+    float: left;
 }
 .img_activite_S{
     height: 100px;
     width: 200px;
 }
 .img_activite_B{
-    height: 500px;
+    height: 300px;
+    width: 200px;
+}
+.fig_haut{
+    height: 350px;
+    width: 200px;
+}
+.fig_basse{
+    height: 150px;
     width: 200px;
 }

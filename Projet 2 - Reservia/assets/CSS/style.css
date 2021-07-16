@@ -134,6 +134,10 @@ figure{
 .container_populaires{
     padding: 15px;
 }
+.container_populaires figure{
+    width: 250px;
+    height: 150px;
+}
 .container_populaires img{
     height: 100px;
     width: 100px;
@@ -153,10 +157,12 @@ figure{
     float: left;
 }
 .img_activite_S{
+    border-radius: 20px 20px 0px 0px;
     height: 100px;
     width: 200px;
 }
 .img_activite_B{
+    border-radius: 20px 20px 0px 0px;
     height: 300px;
     width: 200px;
 }
@@ -167,4 +173,8 @@ figure{
 .fig_basse{
     height: 150px;
     width: 200px;
+}
+.container_img_act figure{
+    border-radius: 20px;
+    box-shadow: black 2px 3px 5px;
 }

@@ -178,3 +178,11 @@ figure{
     border-radius: 20px;
     box-shadow: black 2px 3px 5px;
 }
+.d_m_footer{
+    display: flex;
+    flex-direction: row;
+}
+.f_left{
+    position: relative;
+    float: left;
+}

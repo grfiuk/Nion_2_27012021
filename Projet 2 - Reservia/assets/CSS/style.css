@@ -21,17 +21,17 @@
     border-radius: 50%;
 }
 .filtres{
+    width: 600px;
     display: flex;
-    justify-content: center;
-    float: left;
+    justify-content: space-between;
 }
 .centre{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .arrondi_div{
     border-radius: 20px;
+    border: 1px solid black;
 }
 .centre2{
     margin: auto;
@@ -105,6 +105,8 @@ body{
 .rechercher{
     height: 30px;
     display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
     align-items: center;
 }
 .champs_rech{

@@ -21,7 +21,7 @@
     border-radius: 50%;
 }
 .filtres{
-    width: 600px;
+    width: 700px;
     display: flex;
     justify-content: space-between;
 }
@@ -70,30 +70,29 @@ body{
     padding: 20px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 70%;
     flex-wrap: wrap;
 }
-.container_h_figure img{
-    width: 200px;
-    height: 100px;
-    border-radius: 15px 15px 0px 0px;
-}
 .container_h{
-    background-color: gray;
+    background-color:#F2F2F2;
     padding: 20px;
+    border-radius: 15px;
 }
 .container_h_figure{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
 }
 .img_droite{
+    position: relative;
     display: flex;
     box-sizing: content-box;
-    width: 25%;
     flex-direction: column;
     border-radius: 20px;
     background-color:#F2F2F2;
+    left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 .radius_gauche{
     border-radius: 10px 0px 0px 10px;
@@ -122,24 +121,18 @@ body{
     color: white;
 }
 .txt_colle{
-    margin-bottom: 0;
-}
-figure{
-    border-radius: 15px;
-    padding: 5px;
-    width: 200px;
-    background-color: white;
+    margin-bottom: 2px;
 }
 .icon{
     color: #0065FC;
 }
 .container_populaires{
-    padding: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: content-box;
 }
-.container_populaires figure{
-    width: 250px;
-    height: 150px;
-}
+
 .container_populaires img{
     height: 100px;
     width: 100px;
@@ -149,32 +142,39 @@ figure{
     flex-direction: column;
     position: relative;
     box-sizing: content-box;
-    height: 600px;
-    width: 1500px;
+    height: 450px;
+    width: 100%;
     padding-top: 90px;
 }
 .container_img_act{
     display: flex;
     position: relative;
-    float: left;
+    flex-direction: row;
+    width: 100%;
 }
 .img_activite_S{
     border-radius: 20px 20px 0px 0px;
-    height: 100px;
-    width: 200px;
+    height: 115px;
+    width: 250px;
 }
 .img_activite_B{
     border-radius: 20px 20px 0px 0px;
     height: 300px;
-    width: 200px;
+    width: 250px;
 }
 .fig_haut{
     height: 350px;
-    width: 200px;
+    width: 250px;
+    background-color: white;
+    box-shadow: rgb(0,0,0,0.3) 5px 3px;
+    border-radius: 20px;
 }
 .fig_basse{
-    height: 150px;
-    width: 200px;
+    height: 165px;
+    width: 250px;
+    background-color: white;
+    box-shadow: rgb(0,0,0,0.3) 5px 3px;
+    border-radius: 20px;
 }
 .container_img_act figure{
     border-radius: 20px;
@@ -183,8 +183,156 @@ figure{
 .d_m_footer{
     display: flex;
     flex-direction: row;
+    padding: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #F2F2F2;
 }
 .f_left{
     position: relative;
     float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.logo{
+    position: relative;
+    top: 15px;
+}
+.espace{
+    padding: 8px;
+}
+.flex_col{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-items: left;
+}
+.list_deco{
+    list-style: none;
+}
+
+.div_fig{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    height: 200px;
+    width: 275px;
+    margin-top: 20px;
+}
+.div_fig img{
+    height: 100px;
+    width: 275px;
+    border-radius: 20px 20px 0px 0px ;
+}
+.div_fig_pop{
+    padding: 5px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: row;
+}
+.div_fig_pop img{
+    height: 150px;
+    width: 100px;
+}
+@media screen and (max-width:740px) {
+    .img_centre{
+        flex-direction: column-reverse;
+    }
+    .container_populaires{
+        width: 100%;
+    }
+    .container_h{
+        width: 100%;
+    }
+}
+.plus_pop_graph{
+    display: flex;
+    justify-content: space-between;
+}
+.espace_activite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_img_act div{
+    margin-left: 15px;
+}
+.act_menu{
+
+}
+@media screen and (max-width:740px) {
+    .container_img_act{
+        flex-direction: column;
+    }
+    .fig_haut{
+        height: 165px;
+        width: 250px;
+        background-color: white;
+        box-shadow: rgb(0,0,0,0.3) 5px 3px;
+        border-radius: 20px;
+    }
+    .img_activite_B{
+        border-radius: 20px 20px 0px 0px;
+        height: 115px;
+        width: 250px;
+    }
+    .filtres{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .haut{
+        position: relative;
+        border-top-style: none;
+        padding-bottom: 10px;
+        border-bottom: #0065FC 3px solid;
+        width: 50%;
+        left: -30px;
+        text-align: center;
+    }
+    .right{
+        margin-top: 30px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .inscrire{
+        position: absolute;
+        top: -70px;
+        right: 4px;
+    }
+    .img_droite{
+        left:0px;
+        border-radius: 0px;
+    }
+    .settings{
+        margin: 0px;
+    }
+    .container_h{
+        background-color: white;
+    }
+    .div_fig{
+        height: 175px;
+        width: 200px;
+        font-size: 10px;
+    }
+    .div_fig img{
+        height: 75px;
+        width: 200px;
+    }
+    .container_img_act div{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .container_activite{
+        height: auto;
+        margin: 20px;
+    }
+    .logo{
+        left: 5px;
+    }
+    .d_m_footer{
+        flex-direction: column;
+    }
 }

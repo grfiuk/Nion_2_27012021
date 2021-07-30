@@ -109,9 +109,15 @@ body{
     align-items: center;
 }
 .champs_rech{
+    display: flex;
+    justify-content: center;
     height: 28px;
     width: 150px;
     border: 1px solid gray;
+}
+.champs_rech H4{
+    position: relative;
+    top: -20px;
 }
 .btn_rech{
     height: 30px;
@@ -237,17 +243,6 @@ body{
     height: 150px;
     width: 100px;
 }
-@media screen and (max-width:740px) {
-    .img_centre{
-        flex-direction: column-reverse;
-    }
-    .container_populaires{
-        width: 100%;
-    }
-    .container_h{
-        width: 100%;
-    }
-}
 .plus_pop_graph{
     display: flex;
     justify-content: space-between;
@@ -260,10 +255,19 @@ body{
 .container_img_act div{
     margin-left: 15px;
 }
-.act_menu{
-
+.inscrire{
+    color: #0065FC;
 }
 @media screen and (max-width:740px) {
+    .img_centre{
+        flex-direction: column-reverse;
+    }
+    .container_populaires{
+        width: 100%;
+    }
+    .container_h{
+        width: 100%;
+    }
     .container_img_act{
         flex-direction: column;
     }

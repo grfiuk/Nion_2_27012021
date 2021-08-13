@@ -91,7 +91,6 @@ body{
     border-radius: 20px;
     background-color:#F2F2F2;
     left: 20px;
-    margin-bottom: 20px;
     padding: 20px;
 }
 .radius_gauche{
@@ -172,19 +171,19 @@ body{
     height: 350px;
     width: 250px;
     background-color: white;
-    box-shadow: rgb(0,0,0,0.3) 5px 3px;
+    box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
     border-radius: 20px;
 }
 .fig_basse{
     height: 165px;
     width: 250px;
     background-color: white;
-    box-shadow: rgb(0,0,0,0.3) 5px 3px;
+    box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
     border-radius: 20px;
 }
 .container_img_act figure{
     border-radius: 20px;
-    box-shadow: black 2px 3px 5px;
+    box-shadow: rgba(0,0,0,0.1) 2px 3px 5px;
 }
 .d_m_footer{
     display: flex;
@@ -226,11 +225,15 @@ body{
     height: 200px;
     width: 275px;
     margin-top: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1) ;
+}
+.div_fig div{
+    padding-left: 10px;
 }
 .div_fig img{
     height: 100px;
     width: 275px;
-    border-radius: 20px 20px 0px 0px ;
+    border-radius: 20px 20px 0px 0px;
 }
 .div_fig_pop{
     padding: 5px;
@@ -238,10 +241,14 @@ body{
     background-color: white;
     border-radius: 15px;
     flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+    box-shadow: rgba(0,0,0,0.1) 3px 3px 3px 3px;
 }
 .div_fig_pop img{
     height: 150px;
     width: 100px;
+    border-radius: 15px 0px 0px 15px;
 }
 .plus_pop_graph{
     display: flex;
@@ -258,6 +265,11 @@ body{
 .inscrire{
     color: #0065FC;
 }
+.espace_txt_pop{
+    padding-left: 20px;
+    position: relative;
+}
+
 @media screen and (max-width:740px) {
     .img_centre{
         flex-direction: column-reverse;
@@ -270,12 +282,13 @@ body{
     }
     .container_img_act{
         flex-direction: column;
+        align-items: center;
+        margin-left: -20px;
     }
     .fig_haut{
         height: 165px;
         width: 250px;
         background-color: white;
-        box-shadow: rgb(0,0,0,0.3) 5px 3px;
         border-radius: 20px;
     }
     .img_activite_B{
@@ -293,7 +306,6 @@ body{
         padding-bottom: 10px;
         border-bottom: #0065FC 3px solid;
         width: 50%;
-        left: -30px;
         text-align: center;
     }
     .right{
@@ -316,15 +328,6 @@ body{
     .container_h{
         background-color: white;
     }
-    .div_fig{
-        height: 175px;
-        width: 200px;
-        font-size: 10px;
-    }
-    .div_fig img{
-        height: 75px;
-        width: 200px;
-    }
     .container_img_act div{
         margin-left: 0px;
         margin-top: 10px;
@@ -332,11 +335,25 @@ body{
     .container_activite{
         height: auto;
         margin: 20px;
+        padding-top: unset;
     }
     .logo{
         left: 5px;
     }
     .d_m_footer{
         flex-direction: column;
+    }
+    .activite_mobile{
+        width: 50%;
+        border-bottom:  5px solid #F2F2F2;
+        padding-bottom: 10px;
+        position: relative;
+        text-align: center;
+    }
+    .espace_txt_act{
+        padding-left: 10px;
+    }
+    .div_fig_pop img{
+        height: 125px;
     }
 }

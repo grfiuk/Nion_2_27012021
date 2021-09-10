@@ -5,24 +5,31 @@
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    width: 300px;
+    width: 400px;
     height: 30px;
     float: right;
     align-items: center;
 }
 .settings{
-    margin: 0px 30px 30px 30px;
+    margin: 0px 50px 30px 50px;
     position: relative;
 }
 .cercle{
-    height: 30px;
+    height: 35px;
     background-color:  #DEEBFF;
-    width: 30px;
+    width: 35px;
     border-radius: 50%;
+}
+.icon_info{
+    background-color:#0065FC ;
+    color:#DEEBFF ;
+    border-radius: 10px;
+    height: 50px;
 }
 .filtres{
     width: 700px;
     display: flex;
+    justify-content: space-around;
     justify-content: space-between;
 }
 .centre{
@@ -31,7 +38,7 @@
 }
 .arrondi_div{
     border-radius: 20px;
-    border: 1px solid black;
+    border: 2px solid #DEEBFF;
 }
 .centre2{
     margin: auto;
@@ -47,14 +54,13 @@ body{
     padding: 0px;
 }
 .right span{
-    padding-top: 17px;
+    padding-top: 40px;
 }
 .haut{
     position: relative;
-    padding-top: 10px;
-    top: 2px;
-    border-top: 4px solid  #0065FC;
     color:  #0065FC;
+    width: 125px;
+    text-align: center;
 }
 .img_centre{
     display: flex;
@@ -80,7 +86,7 @@ body{
 .container_h_figure{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px 20px 0px 20px;
 }
 .img_droite{
@@ -92,41 +98,45 @@ body{
     background-color:#F2F2F2;
     left: 20px;
     padding: 20px;
+    width: 700px;
 }
 .radius_gauche{
     border-radius: 10px 0px 0px 10px;
     background-color:#F2F2F2;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     justify-content: center;
 }
 .rechercher{
-    height: 30px;
+    position: relative;
+    height: 40px;
     display: flex;
-    margin-top: 15px;
     margin-bottom: 15px;
     align-items: center;
+    top: 5px;
 }
 .champs_rech{
     display: flex;
     justify-content: center;
-    height: 28px;
+    height: 38px;
     width: 150px;
-    border: 1px solid gray;
+    border: 1px solid #F2F2F2;
+    align-items: center;
 }
 .champs_rech H4{
     position: relative;
-    top: -20px;
+}
+.width{
+    position: relative;
+    top: -15px;
 }
 .btn_rech{
-    height: 30px;
+    height: 40px;
     width: 100px;
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
     color: white;
-}
-.txt_colle{
-    margin-bottom: 2px;
+    justify-content: center;
 }
 .icon{
     color: #0065FC;
@@ -138,10 +148,6 @@ body{
     box-sizing: content-box;
 }
 
-.container_populaires img{
-    height: 100px;
-    width: 100px;
-}
 .container_activite{
     display: flex;
     flex-direction: column;
@@ -156,6 +162,7 @@ body{
     position: relative;
     flex-direction: row;
     width: 100%;
+    justify-content: space-between;
 }
 .img_activite_S{
     border-radius: 20px 20px 0px 0px;
@@ -188,10 +195,11 @@ body{
 .d_m_footer{
     display: flex;
     flex-direction: row;
-    padding: 30px;
-    justify-content: space-evenly;
+    padding-top: 30px;
+    justify-content: space-between;
     width: 100%;
     background-color: #F2F2F2;
+    text-align: left;
 }
 .f_left{
     position: relative;
@@ -211,9 +219,20 @@ body{
     position: relative;
     flex-direction: column;
     justify-items: left;
+    width: 33%;
+    padding-left: 20px;
 }
 .list_deco{
     list-style: none;
+    position: relative;
+    left: -40px;
+    top: -30px;
+}
+.list_deco li{
+    padding-bottom: 10px;
+}
+.pad_top_mobile{
+    padding-top: 20px;
 }
 
 .div_fig{
@@ -223,16 +242,21 @@ body{
     border-radius: 20px;
     padding: 5px;
     height: 200px;
-    width: 275px;
+    width: 250px;
     margin-top: 20px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1) ;
 }
+.hover:hover{
+    border-top: 3px solid #0065FC;
+}
 .div_fig div{
     padding-left: 10px;
+    position: relative;
+    bottom: 20px;
 }
 .div_fig img{
-    height: 100px;
-    width: 275px;
+    height: 125px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 .div_fig_pop{
@@ -244,11 +268,15 @@ body{
     position: relative;
     margin-top: 30px;
     box-shadow: rgba(0,0,0,0.1) 3px 3px 3px 3px;
+    height: 140px;
 }
 .div_fig_pop img{
-    height: 150px;
-    width: 100px;
+    height: 100%;
+    width: 140px;
     border-radius: 15px 0px 0px 15px;
+}
+.div_fig_pop picture{
+    width: 140px;
 }
 .plus_pop_graph{
     display: flex;
@@ -266,13 +294,31 @@ body{
     color: #0065FC;
 }
 .espace_txt_pop{
-    padding-left: 20px;
     position: relative;
+ padding-left: 30px;
+}
+.espace_top_header{
+    position: relative;
+    padding-top: 20px;
+}
+.display_phone{
+    display: none;
+}
+.txt_vign{
+    position: relative;
+    top: -10px;
+}
+.icon_vign{
+    position: relative;
+    bottom:50px;
 }
 
 @media screen and (max-width:740px) {
     .img_centre{
         flex-direction: column-reverse;
+    }
+    .padding_left{
+        padding-left: 20px;
     }
     .container_populaires{
         width: 100%;
@@ -287,18 +333,21 @@ body{
     }
     .fig_haut{
         height: 165px;
-        width: 250px;
+        width: 90%;
         background-color: white;
         border-radius: 20px;
     }
     .img_activite_B{
         border-radius: 20px 20px 0px 0px;
         height: 115px;
-        width: 250px;
+        width: 100%;
     }
     .filtres{
-        width: 100%;
+        width: 75%;
         flex-wrap: wrap;
+        float: left;
+        padding-left: 20px;
+        margin-top: 10px;
     }
     .haut{
         position: relative;
@@ -356,4 +405,65 @@ body{
     .div_fig_pop img{
         height: 125px;
     }
+    .display_pc{
+        display: none;
+    }
+    .display_phone{
+        display: block;
+    }
+    .btn_rech{
+        width: 40px;
+        border-radius: 10px;
+    }
+    .rechercher{
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+    }
+    .pad_top_mobile{
+        padding-top: 100px;
+        margin: 0px 30px 30px 30px;
+
+    }
+    .champs_rech{
+        width: 60%;
+        height: 50px;
+    }
+    .btn_rech{
+        width: 15%;
+        height: 50px;
+    }
+    .radius_gauche{
+        height: 50px;
+        width: 15%;
+    }
+    .width{
+        top: 5px;
+    }.espace_activite{
+        width: 100%;
+
+        align-items: center;
+    }
+    .fig_basse{
+        width: 90%;
+    }
+    .img_activite_S{
+        width: 100%;
+    }
+    .flex_col{
+        width: 90%;
+    }
+    .div_fig{
+        width: 100%;
+    }
+    .container_h{
+        width: unset;
+    }
+    .container_h_figure{
+        padding: unset;
+    }
+    .div_fig img{
+        width: 100%;
+    }
+
 }

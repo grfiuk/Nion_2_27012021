@@ -89,6 +89,9 @@ body{
     justify-content: space-evenly;
     padding: 0px 20px 0px 20px;
 }
+.container_h picture{
+    height: 175px;
+}
 .img_droite{
     position: relative;
     display: flex;
@@ -161,9 +164,10 @@ body{
     width: 100%;
     justify-content: space-evenly;
 }
-.container_img_act picture{
+picture{
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .img_activite_S{
     border-radius: 20px 20px 0px 0px;
@@ -174,6 +178,9 @@ body{
     border-radius: 20px 20px 0px 0px;
     height: 300px;
     width: 250px;
+}
+.img_activite_B picture{
+    height: 700px;
 }
 .fig_haut{
     height: 350px;
@@ -255,7 +262,8 @@ body{
 .div_fig div{
     padding-left: 10px;
     position: relative;
-    bottom: 15px;
+    bottom: 30px;
+    height: 60px;
 }
 .div_fig img{
     height: 125px;

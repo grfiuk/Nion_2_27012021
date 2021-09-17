@@ -172,7 +172,7 @@ picture{
 }
 .img_activite_S{
     border-radius: 20px 20px 0px 0px;
-    height: 200px;
+    width: 100%;
 }
 .img_activite_S picture{
     height: 150px;
@@ -300,9 +300,6 @@ picture{
     flex-direction: column;
     justify-content: space-between;
 }
-.container_img_act div{
-    margin-left: 15px;
-}
 .inscrire{
     color: #0065FC;
 }
@@ -325,7 +322,10 @@ picture{
     position: relative;
     bottom:50px;
 }
-
+.espace_txt_act{
+    margin: 15px;
+    font-weight: bold;
+}
 @media screen and (max-width:740px) {
     .img_centre{
         flex-direction: column-reverse;

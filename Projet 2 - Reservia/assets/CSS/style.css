@@ -39,6 +39,7 @@
 .arrondi_div{
     border-radius: 20px;
     border: 2px solid #DEEBFF;
+    margin: 5px;
 }
 .centre2{
     margin: auto;
@@ -171,13 +172,14 @@ picture{
 }
 .img_activite_S{
     border-radius: 20px 20px 0px 0px;
-    height: 115px;
-    width: 250px;
+    height: 200px;
+}
+.img_activite_S picture{
+    height: 150px;
 }
 .img_activite_B{
     border-radius: 20px 20px 0px 0px;
     height: 300px;
-    width: 250px;
 }
 .img_activite_B picture{
     height: 700px;
@@ -192,11 +194,14 @@ picture{
 }
 .fig_basse{
     height: 165px;
-    width: 250px;
     background-color: white;
     box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
     border-radius: 20px;
     overflow: hidden;
+}
+.fig_basse picture{
+    height: 125px;
+    width: 300px;
 }
 .container_img_act figure{
     border-radius: 20px;
@@ -281,13 +286,10 @@ picture{
     box-shadow: rgba(0,0,0,0.1) 3px 3px 3px 3px;
     height: 140px;
 }
-.div_fig_pop img{
-    height: 100%;
-    width: 140px;
-    border-radius: 15px 0px 0px 15px;
-}
 .div_fig_pop picture{
-    width: 140px;
+    width: 200px;
+    border-radius: 15px 0px 0px 15px;
+    height: 140px;
 }
 .plus_pop_graph{
     display: flex;
@@ -381,6 +383,7 @@ picture{
     .img_droite{
         left:0px;
         border-radius: 0px;
+        width: auto;
     }
     .settings{
         margin: 0px;
@@ -475,6 +478,9 @@ picture{
     }
     .div_fig img{
         width: 100%;
+    }
+    .f_left{
+        margin: 0px 20px 0px 20px;
     }
 
 }

@@ -403,8 +403,8 @@ picture{
         background-color: white;
     }
     .container_img_act div{
-        margin-left: 0px;
-        margin-top: 10px;
+        margin-left: 10px;
+        margin-top: 15px;
     }
     .container_activite{
         height: auto;
@@ -501,13 +501,14 @@ picture{
     }
     #taille_unique{
         width: unset;
+    }   
+    .hover:hover{
+        border: 0px;
     }
     .hover2:hover{
         border-bottom: #0065FC 2px solid;
     }
-    .hover:hover{
-        border: 0px;
-    }
+
     .container_h picture{
         height: 300px;
     }
@@ -536,5 +537,19 @@ picture{
         border-radius: 20px 20px 0px 0px;
         height: 115px;
         width: 100%;
+    }
+    .fig_basse{
+        height: 165px;
+        width: 90%;
+    }
+    .fig_basse picture{
+        height: 125px;
+    }
+    .img_activite_S{
+        height: 115px;
+        width: 100%;
+    }
+    #taille_unique{
+        width: 300px;
     }
 }

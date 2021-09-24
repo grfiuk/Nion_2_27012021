@@ -356,14 +356,14 @@ picture{
         margin-left: -20px;
     }
     .fig_haut{
-        height: 165px;
+        height: 300px;
         width: 90%;
         background-color: white;
         border-radius: 20px;
     }
     .img_activite_B{
         border-radius: 20px 20px 0px 0px;
-        height: 115px;
+        height: 250px;
         width: 100%;
     }
     .filtres{
@@ -471,6 +471,7 @@ picture{
     }
     .fig_basse{
         width: 90%;
+        height: 300px;
     }
     .img_activite_S{
         width: 100%;
@@ -510,6 +511,9 @@ picture{
     .container_h picture{
         height: 300px;
     }
+    .fig_basse picture{
+        height: 250px;
+    }
 }
 @media screen and (max-width:380px) {
     .div_fig{
@@ -527,5 +531,10 @@ picture{
         width: 90%;
         background-color: white;
         border-radius: 20px;
+    }    
+    .img_activite_B{
+        border-radius: 20px 20px 0px 0px;
+        height: 115px;
+        width: 100%;
     }
 }

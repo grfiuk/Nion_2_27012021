@@ -88,7 +88,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0px 20px 0px 20px;
+
 }
 .container_h picture{
     height: 175px;
@@ -186,7 +186,7 @@ picture{
 }
 .fig_haut{
     height: 350px;
-    width: 250px;
+    width: 250px;  
     background-color: white;
     box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
     border-radius: 20px;
@@ -198,10 +198,11 @@ picture{
     box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
     border-radius: 20px;
     overflow: hidden;
+    width: 275px;
 }
 .fig_basse picture{
     height: 125px;
-    width: 300px;
+    width:100%;
 }
 .container_img_act figure{
     border-radius: 20px;
@@ -291,9 +292,19 @@ picture{
     border-radius: 15px 0px 0px 15px;
     height: 140px;
 }
+.div_fig_pop img{
+    width: 200px;
+}
+#taille_unique{
+    width: 300px;
+}
 .plus_pop_graph{
     display: flex;
     justify-content: space-between;
+}
+.espace_bottom_pop{
+    position: relative;
+    bottom: 20px;
 }
 .espace_activite{
     display: flex;
@@ -326,7 +337,7 @@ picture{
     margin: 15px;
     font-weight: bold;
 }
-@media screen and (max-width:740px) {
+@media screen and (max-width:780px) {
     .img_centre{
         flex-direction: column-reverse;
     }
@@ -417,7 +428,7 @@ picture{
         padding-left: 10px;
     }
     .div_fig_pop img{
-        height: 125px;
+        width: 200px;
     }
     .display_pc{
         display: none;
@@ -469,6 +480,7 @@ picture{
     }
     .div_fig{
         width: 100%;
+        height: 400px;
     }
     .container_h{
         width: unset;
@@ -478,9 +490,42 @@ picture{
     }
     .div_fig img{
         width: 100%;
+        height: 300px;
+    }
+    .div_fig div{
+        bottom: unset;
     }
     .f_left{
         margin: 0px 20px 0px 20px;
     }
-
+    #taille_unique{
+        width: unset;
+    }
+    .hover2:hover{
+        border-bottom: #0065FC 2px solid;
+    }
+    .hover:hover{
+        border: 0px;
+    }
+    .container_h picture{
+        height: 300px;
+    }
+}
+@media screen and (max-width:380px) {
+    .div_fig{
+        height: 230px;
+    }
+    .div_fig img{
+        width: 100%;
+        height: 150px;
+    }
+    .div_fig div{
+        bottom: 30px;
+    }
+    .fig_haut{
+        height: 165px;
+        width: 90%;
+        background-color: white;
+        border-radius: 20px;
+    }
 }

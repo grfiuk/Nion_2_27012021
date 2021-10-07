@@ -258,7 +258,7 @@ picture{
     padding: 5px;
     height: 200px;
     width: 250px;
-    margin-top: 20px;
+    margin: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1) ;
 }
 .hover:hover{
@@ -331,7 +331,7 @@ picture{
 }
 .icon_vign{
     position: relative;
-    bottom:50px;
+    bottom:60px;
 }
 .espace_txt_act{
     margin: 15px;
@@ -346,6 +346,10 @@ a:hover{
 }
 #act_marseille{
     margin-left: 20px;
+}
+img:not(.logo){
+    min-width: 100%;
+    object-fit: cover;
 }
 @media screen and (max-width:780px) {
     .img_centre{

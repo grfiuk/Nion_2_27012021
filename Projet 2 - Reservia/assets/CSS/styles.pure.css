@@ -1,0 +1,629 @@
+@font-face {
+	font-family: "Raleway,sans-serif";
+	src: url("font/Raleway/static/Raleway-Regular.ttf");
+}
+
+body {
+	font-family: "Raleway,sans-serif";
+}
+
+.right {
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	width: 400px;
+	height: 30px;
+	float: right;
+	align-items: center
+}
+
+.settings {
+	margin: 0 50px 30px 50px;
+	position: relative
+}
+
+.cercle {
+	height: 35px;
+	background-color: #deebff;
+	width: 35px;
+	border-radius: 50%
+}
+
+.icon_info {
+	background-color: #0065fc;
+	color: #deebff;
+	border-radius: 10px;
+	height: 50px
+}
+
+.filtres {
+	width: 700px;
+	display: flex;
+	justify-content: space-around;
+	justify-content: space-between
+}
+
+.centre {
+	display: flex;
+	align-items: center
+}
+
+.arrondi_div {
+	border-radius: 20px;
+	border: 2px solid #deebff;
+	margin: 5px
+}
+
+.centre2 {
+	margin: auto
+}
+
+.right span {
+	padding-top: 40px
+}
+
+.haut {
+	position: relative;
+	width: 125px;
+	text-align: center
+}
+
+.img_centre {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	float: left;
+	box-sizing: content-box;
+	width: 100%
+}
+
+.img_gauche {
+	display: flex;
+	box-sizing: content-box;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #f2f2f2;
+	flex-wrap: wrap
+}
+
+.container_h {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 15px
+}
+
+.container_h_figure {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly
+}
+
+.container_h picture {
+	height: 175px
+}
+
+.img_droite {
+	position: relative;
+	display: flex;
+	box-sizing: content-box;
+	flex-direction: column;
+	border-radius: 20px;
+	background-color: #f2f2f2;
+	left: 20px;
+	padding: 20px;
+	width: 700px
+}
+
+.radius_gauche {
+	border-radius: 10px 0 0 10px;
+	background-color: #f2f2f2;
+	height: 40px;
+	width: 40px;
+	justify-content: center
+}
+
+.rechercher {
+	position: relative;
+	height: 40px;
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+	top: 5px
+}
+
+.champs_rech {
+	display: flex;
+	justify-content: center;
+	height: 38px;
+	width: 150px;
+	border: 1px solid #f2f2f2;
+	align-items: center
+}
+
+.champs_rech H4 {
+	position: relative
+}
+
+.width {
+	position: relative;
+	top: -15px
+}
+
+.btn_rech {
+	height: 40px;
+	width: 100px;
+	background-color: #0065fc;
+	border-radius: 0 10px 10px 0;
+	color: #fff;
+	justify-content: center
+}
+
+.icon {
+	color: #0065fc
+}
+
+.container_populaires {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	box-sizing: content-box
+}
+
+.container_activite {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 90px
+}
+
+.container_img_act {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-evenly
+}
+
+picture {
+	display: flex;
+	justify-content: center;
+	overflow: hidden
+}
+
+.img_activite_S {
+	border-radius: 20px 20px 0 0;
+	width: 100%
+}
+
+.img_activite_S picture {
+	height: 150px
+}
+
+.img_activite_B {
+	border-radius: 20px 20px 0 0;
+	height: 300px
+}
+
+.img_activite_B picture {
+	height: 700px
+}
+
+.fig_haut {
+	height: 345px;
+	width: 22%;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, .1) 5px 5px 5px;
+	border-radius: 20px
+}
+
+.fig_basse {
+	height: 165px;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, .1) 5px 5px 5px;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 100%
+}
+
+.fig_basse picture {
+	height: 125px;
+	width: 100%
+}
+
+.container_img_act figure {
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, .1) 2px 3px 5px
+}
+
+.d_m_footer {
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #f2f2f2;
+	text-align: left
+}
+
+.f_left {
+	position: relative;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px
+}
+
+.logo {
+	position: relative;
+	top: 15px
+}
+
+.espace {
+	padding: 8px
+}
+
+.flex_col {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-items: left;
+	width: 33%;
+	padding-left: 20px
+}
+
+.list_deco {
+	list-style: none;
+	position: relative;
+	left: -40px;
+	top: -30px
+}
+
+.list_deco li {
+	padding-bottom: 10px
+}
+
+.pad_top_mobile {
+	padding-top: 20px
+}
+
+.div_fig {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 5px;
+	height: 200px;
+	width: 250px;
+	margin: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .1)
+}
+
+.hover:hover {
+	border-top: 3px solid #0065fc
+}
+
+.div_fig div {
+	padding-left: 10px;
+	position: relative;
+	bottom: 30px;
+	height: 60px
+}
+
+.div_fig img {
+	height: 125px;
+	width: 100%;
+	border-radius: 20px 20px 0 0
+}
+
+.div_fig_pop {
+	padding: 5px;
+	display: flex;
+	background-color: #fff;
+	border-radius: 15px;
+	flex-direction: row;
+	position: relative;
+	margin-top: 30px;
+	box-shadow: rgba(0, 0, 0, .1) 3px 3px 3px 3px;
+	height: 140px
+}
+
+.div_fig_pop picture {
+	width: 200px;
+	border-radius: 15px 0 0 15px;
+	height: 140px
+}
+
+.div_fig_pop img {
+	width: 200px
+}
+
+#taille_unique {
+	width: 300px
+}
+
+.plus_pop_graph {
+	display: flex;
+	justify-content: space-between
+}
+
+.espace_bottom_pop {
+	position: relative;
+	bottom: 20px
+}
+
+.espace_activite {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 22%
+}
+
+.inscrire {
+	color: #0065fc
+}
+
+.espace_txt_pop {
+	position: relative;
+	padding-left: 30px
+}
+
+.espace_top_header {
+	position: relative;
+	padding-top: 20px
+}
+
+.display_phone {
+	display: none
+}
+
+.txt_vign {
+	position: relative;
+	top: -10px
+}
+
+.icon_vign {
+	position: relative;
+	bottom: 60px
+}
+
+.espace_txt_act {
+	margin: 15px;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+a {
+	text-decoration: none;
+	color: #d5d5d5
+}
+
+a:hover {
+	color: #0065fc
+}
+
+#act_marseille {
+	margin-left: 20px
+}
+
+img:not(.logo) {
+	min-width: 100%;
+	object-fit: cover
+}
+
+@media screen and (max-width:780px) {
+	.img_centre {
+		flex-direction: column-reverse
+	}
+	.padding_left {
+		padding-left: 20px
+	}
+	.container_populaires {
+		width: 100%
+	}
+	.container_h {
+		width: 100%
+	}
+	.container_img_act {
+		flex-direction: column;
+		align-items: center
+	}
+	.fig_haut {
+		height: 300px;
+		width: 90%;
+		background-color: #fff;
+		border-radius: 20px
+	}
+	.img_activite_B {
+		border-radius: 20px 20px 0 0;
+		height: 250px;
+		width: 100%
+	}
+	.filtres {
+		width: 75%;
+		flex-wrap: wrap;
+		float: left;
+		padding-left: 20px;
+		margin-top: 10px
+	}
+	.haut {
+		position: relative;
+		border-top-style: none;
+		padding-bottom: 10px;
+		border-bottom: #f2f2f2 3px solid;
+		width: 50%;
+		text-align: center
+	}
+	.right {
+		margin-top: 30px;
+		width: 100%;
+		padding-bottom: 20px
+	}
+	.inscrire {
+		position: absolute;
+		top: -70px;
+		right: 4px
+	}
+	.img_droite {
+		left: 0;
+		border-radius: 0;
+		width: auto
+	}
+	.settings {
+		margin: 0
+	}
+	.container_h {
+		background-color: #fff
+	}
+	.container_img_act div {
+		margin-top: 15px
+	}
+	.container_activite {
+		height: auto;
+		padding-top: unset;
+		justify-content: center
+	}
+	.logo {
+		left: 5px
+	}
+	.d_m_footer {
+		flex-direction: column
+	}
+	.activite_mobile {
+		width: 50%;
+		border-bottom: 5px solid #f2f2f2;
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center
+	}
+	.espace_txt_act {
+		padding-left: 10px
+	}
+	.div_fig_pop img {
+		width: 200px
+	}
+	.display_pc {
+		display: none
+	}
+	.display_phone {
+		display: block
+	}
+	.btn_rech {
+		width: 40px;
+		border-radius: 10px
+	}
+	.rechercher {
+		justify-content: center;
+		width: 100%;
+		height: 50px
+	}
+	.pad_top_mobile {
+		padding-top: 100px;
+		margin: 0 30px 30px 30px
+	}
+	.champs_rech {
+		width: 60%;
+		height: 50px
+	}
+	.btn_rech {
+		width: 15%;
+		height: 50px
+	}
+	.radius_gauche {
+		height: 50px;
+		width: 15%
+	}
+	.width {
+		top: 5px
+	}
+	.espace_activite {
+		width: 100%;
+		align-items: center
+	}
+	.fig_basse {
+		width: 90%;
+		height: 300px
+	}
+	.img_activite_S {
+		width: 100%
+	}
+	.flex_col {
+		width: 90%
+	}
+	.div_fig {
+		width: 100%;
+		height: 400px
+	}
+	.container_h {
+		width: unset
+	}
+	.container_h_figure {
+		padding: unset
+	}
+	.div_fig img {
+		width: 100%;
+		height: 300px
+	}
+	.div_fig div {
+		bottom: unset
+	}
+	.f_left {
+		margin: 0 20px 0 20px
+	}
+	#taille_unique {
+		width: unset
+	}
+	.hover:hover {
+		border: 0
+	}
+	.hover2:hover {
+		border-bottom: #0065fc 2px solid
+	}
+	.container_h picture {
+		height: 300px
+	}
+	.fig_basse picture {
+		height: 250px
+	}
+}
+
+@media screen and (max-width:380px) {
+	.div_fig {
+		height: 230px
+	}
+	.div_fig img {
+		width: 100%;
+		height: 150px
+	}
+	.div_fig div {
+		bottom: 30px
+	}
+	.fig_haut {
+		height: 165px;
+		width: 90%;
+		background-color: #fff;
+		border-radius: 20px
+	}
+	.img_activite_B {
+		border-radius: 20px 20px 0 0;
+		height: 115px;
+		width: 100%
+	}
+	.fig_basse {
+		height: 165px;
+		width: 90%
+	}
+	.fig_basse picture {
+		height: 125px
+	}
+	.img_activite_S {
+		height: 115px;
+		width: 100%
+	}
+	#taille_unique {
+		width: 300px
+	}
+	.espace_txt_pop {
+		padding-left: 20px
+	}
+}

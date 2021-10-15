@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("font/Raleway/static/Raleway-Regular.ttf");
+}
+body{
+    font-family: "Raleway-Regular";
+}
 .none{
     display: none;
 }
@@ -49,12 +56,6 @@
 div{
     border: 1px solid blue
 }*/
-body{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-}
 .right span{
     padding-top: 25px;
     padding-right: 10px;

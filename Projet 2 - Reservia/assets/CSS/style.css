@@ -25,6 +25,7 @@
     color:#DEEBFF ;
     border-radius: 10px;
     height: 50px;
+    margin-right: 10pxs;
 }
 .filtres{
     width: 700px;
@@ -55,7 +56,8 @@ body{
     padding: 0px;
 }
 .right span{
-    padding-top: 40px;
+    padding-top: 25px;
+    padding-right: 10px;
 }
 .haut{
     position: relative;
@@ -143,6 +145,13 @@ body{
 }
 .icon{
     color: #0065FC;
+}
+.i_color{
+    color: #F2F2F2;
+}
+
+.icon_back{
+    background-color: #0065FC;
 }
 .container_populaires{
     display: flex;
@@ -299,6 +308,7 @@ picture{
 .plus_pop_graph{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .espace_bottom_pop{
     position: relative;
@@ -359,6 +369,7 @@ img:not(.logo){
     }
     .padding_left{
         padding-left: 20px;
+        width: 100%;
     }
     .container_populaires{
         width: 100%;
@@ -426,7 +437,7 @@ img:not(.logo){
         justify-content: center;
     }
     .logo{
-        left: 5px;
+        left: 10px;
     }
     .d_m_footer{
         flex-direction: column;

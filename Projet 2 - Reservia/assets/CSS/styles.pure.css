@@ -5,6 +5,50 @@
 
 body {
 	font-family: "Raleway,sans-serif";
+    padding: 0;
+    margin: 0;
+}
+.width_img_h{
+    width: 870px;
+}
+.container_h img{
+    height: 100px;
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.flex_row h3, p{
+    margin: 5px;
+    padding: 0px;
+}
+.bloc_img_h{
+    display: flex;
+}
+.pad_5{
+    padding: 5px;
+}
+.flec_col{
+    flex-direction: column;
+}
+.flex_col{
+    flex-direction: column-reverse;
+}
+.flex_row{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+
+}
+.flex_col_2{
+
+}
+.bg_white{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, .1) 5px 5px 5px;
+    width: 250px;
 }
 
 .right {
@@ -18,22 +62,25 @@ body {
 }
 
 .settings {
-	margin: 0 50px 30px 50px;
+	margin: 0 30px 30px 40px;
 	position: relative
 }
-
+.color_blue{
+    color: #0065fc;
+}
 .cercle {
 	height: 35px;
 	background-color: #deebff;
 	width: 35px;
 	border-radius: 50%
 }
+.pad_top_20{
+    padding-top: 20px;
+}
 
 .icon_info {
-	background-color: #0065fc;
-	color: #deebff;
-	border-radius: 10px;
-	height: 50px
+	background-color:#0065fc;
+    color: #deebff;
 }
 
 .filtres {
@@ -68,13 +115,12 @@ body {
 	text-align: center
 }
 
+
 .img_centre {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
 	float: left;
-	box-sizing: content-box;
-	width: 100%
 }
 
 .img_gauche {
@@ -89,7 +135,8 @@ body {
 .container_h {
 	background-color: #f2f2f2;
 	padding: 20px;
-	border-radius: 15px
+	border-radius: 15px;
+    flex-grow: 1;
 }
 
 .container_h_figure {
@@ -101,17 +148,18 @@ body {
 .container_h picture {
 	height: 175px
 }
-
+#taille_unique{
+    width: 230px;
+}
 .img_droite {
 	position: relative;
 	display: flex;
-	box-sizing: content-box;
 	flex-direction: column;
 	border-radius: 20px;
 	background-color: #f2f2f2;
-	left: 20px;
 	padding: 20px;
-	width: 700px
+    width: 350px;
+    margin-left: 50px;
 }
 
 .radius_gauche {
@@ -158,15 +206,16 @@ body {
 	justify-content: center
 }
 
-.icon {
+.icon_p {
 	color: #0065fc
+}
+.icon_v{
+    color: #d5d5d5;
 }
 
 .container_populaires {
 	display: flex;
-	width: 100%;
 	flex-direction: column;
-	box-sizing: content-box
 }
 
 .container_activite {
@@ -216,18 +265,30 @@ picture {
 	border-radius: 20px
 }
 
-.fig_basse {
-	height: 165px;
+.fig_basse_g {
+	height: 200px;
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, .1) 5px 5px 5px;
 	border-radius: 20px;
 	overflow: hidden;
 	width: 100%
 }
-
-.fig_basse picture {
-	height: 125px;
+.fig_basse_p{
+    height: 125px;
+    background-color: #fff;
+	box-shadow: rgba(0, 0, 0, .1) 5px 5px 5px;
+	border-radius: 20px;
+	overflow: hidden;
 	width: 100%
+}
+
+.fig_basse_g picture {
+	height: 150px;
+	width: 100%
+}
+.fig_basse_p picture{
+    height: 75px;
+    width: 100%;
 }
 
 .container_img_act figure {
@@ -239,10 +300,9 @@ picture {
 	display: flex;
 	flex-direction: row;
 	padding-top: 30px;
-	justify-content: space-between;
 	width: 100%;
 	background-color: #f2f2f2;
-	text-align: left
+	text-align: left;
 }
 
 .f_left {
@@ -260,14 +320,16 @@ picture {
 .espace {
 	padding: 8px
 }
-
+.bold{
+    font: bold;
+}
 .flex_col {
 	display: flex;
 	position: relative;
 	flex-direction: column;
 	justify-items: left;
-	width: 33%;
-	padding-left: 20px
+	padding-left: 20px;
+    flex-grow: 1;
 }
 
 .list_deco {
@@ -327,19 +389,12 @@ picture {
 }
 
 .div_fig_pop picture {
-	width: 200px;
 	border-radius: 15px 0 0 15px;
-	height: 140px
 }
 
 .div_fig_pop img {
-	width: 200px
+	width: 150px;
 }
-
-#taille_unique {
-	width: 300px
-}
-
 .plus_pop_graph {
 	display: flex;
 	justify-content: space-between
@@ -406,12 +461,16 @@ a:hover {
 	margin-left: 20px
 }
 
-img:not(.logo) {
+img:not(.logo, .container_h img, .container_populaires img) {
 	min-width: 100%;
 	object-fit: cover
 }
+.container_populaires img{
+    min-height: 100%;
+    object-fit: cover;
+}
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:1080px) {
 	.img_centre {
 		flex-direction: column-reverse
 	}
@@ -585,12 +644,23 @@ img:not(.logo) {
 	.fig_basse picture {
 		height: 250px
 	}
+    .img_droite{
+        margin: 0px;
+    }
 }
 
 @media screen and (max-width:380px) {
 	.div_fig {
 		height: 230px
 	}
+    .bg_white{
+        width: 100%;
+    }
+    .img_droite{
+        margin: 0px;
+        left: 0;
+        width: 90vw;
+    }
 	.div_fig img {
 		width: 100%;
 		height: 150px
@@ -626,4 +696,26 @@ img:not(.logo) {
 	.espace_txt_pop {
 		padding-left: 20px
 	}
+    .logo{
+        left:25px;
+    }
+    .inscrire{
+        top: -90px;
+        right: 20px;
+    }.container_populaires{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container_h{
+        padding: 0px;
+    }
+    .container_populaires h4{
+        margin: 5px;
+    }
+    .espace_bottom_pop{
+        bottom: initial;
+    }
+    .flex_row h3{
+        margin: 5px;
+    }
 }

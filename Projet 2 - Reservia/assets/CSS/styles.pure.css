@@ -39,9 +39,7 @@ body {
     justify-content: space-around;
 
 }
-.flex_col_2{
 
-}
 .bg_white{
     background-color: white;
     border-radius: 20px;
@@ -121,6 +119,7 @@ body {
 	justify-content: space-between;
 	position: relative;
 	float: left;
+    width: 100%;
 }
 
 .img_gauche {
@@ -157,7 +156,7 @@ body {
 	flex-direction: column;
 	border-radius: 20px;
 	background-color: #f2f2f2;
-	padding: 20px;
+	padding: 18px;
     width: 350px;
     margin-left: 50px;
 }
@@ -299,10 +298,9 @@ picture {
 .d_m_footer {
 	display: flex;
 	flex-direction: row;
-	padding-top: 30px;
 	width: 100%;
 	background-color: #f2f2f2;
-	text-align: left;
+    margin-top: 20px;
 }
 
 .f_left {
@@ -321,7 +319,7 @@ picture {
 	padding: 8px
 }
 .bold{
-    font: bold;
+    font-weight: bold;
 }
 .flex_col {
 	display: flex;
@@ -418,7 +416,7 @@ picture {
 
 .espace_txt_pop {
 	position: relative;
-	padding-left: 30px
+	padding-left: 30px;
 }
 
 .espace_top_header {
@@ -470,7 +468,7 @@ img:not(.logo, .container_h img, .container_populaires img) {
     object-fit: cover;
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1100px) {
 	.img_centre {
 		flex-direction: column-reverse
 	}
@@ -499,10 +497,9 @@ img:not(.logo, .container_h img, .container_populaires img) {
 		width: 100%
 	}
 	.filtres {
-		width: 75%;
+		width: 100%;
 		flex-wrap: wrap;
 		float: left;
-		padding-left: 20px;
 		margin-top: 10px
 	}
 	.haut {
@@ -526,7 +523,7 @@ img:not(.logo, .container_h img, .container_populaires img) {
 	.img_droite {
 		left: 0;
 		border-radius: 0;
-		width: auto
+		width: auto;
 	}
 	.settings {
 		margin: 0
@@ -647,9 +644,16 @@ img:not(.logo, .container_h img, .container_populaires img) {
     .img_droite{
         margin: 0px;
     }
+    .fig_basse_p, .fig_basse_g {
+		height: 300px;
+		width: 90%
+	}
+	.fig_basse_p picture, .fig_basse_g picture {
+		height: 250px
+	}
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:480px) {
 	.div_fig {
 		height: 230px
 	}
@@ -679,12 +683,12 @@ img:not(.logo, .container_h img, .container_populaires img) {
 		height: 115px;
 		width: 100%
 	}
-	.fig_basse {
+	.fig_basse_p, .fig_basse_g {
 		height: 165px;
 		width: 90%
 	}
-	.fig_basse picture {
-		height: 125px
+	.fig_basse_p picture, .fig_basse_g picture {
+		height: 115px
 	}
 	.img_activite_S {
 		height: 115px;
@@ -694,7 +698,7 @@ img:not(.logo, .container_h img, .container_populaires img) {
 		width: 300px
 	}
 	.espace_txt_pop {
-		padding-left: 20px
+		padding-left: 10px
 	}
     .logo{
         left:25px;
@@ -708,14 +712,31 @@ img:not(.logo, .container_h img, .container_populaires img) {
     }
     .container_h{
         padding: 0px;
+        margin: 10px;
     }
     .container_populaires h4{
         margin: 5px;
     }
-    .espace_bottom_pop{
-        bottom: initial;
-    }
     .flex_row h3{
         margin: 5px;
     }
+    .container_img_act div{
+        margin-top: 10px;
+    }
+    .div_fig_pop h3{
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+    }
+    .espace_bottom_pop{
+        bottom: initial;
+        padding-left: 5px;
+    }
+    .txt_vign{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container_h img{
+        height: 150px;
+    }
+
 }

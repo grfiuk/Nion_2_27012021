@@ -239,7 +239,7 @@ picture {
 }
 
 .img_activite_S {
-	border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0px 0px;
 	width: 100%
 }
 
@@ -443,7 +443,7 @@ picture {
 	font-weight: 700;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap
+	white-space: nowrap;
 }
 
 a {
@@ -469,6 +469,9 @@ img:not(.logo, .container_h img, .container_populaires img) {
 }
 
 @media screen and (max-width:1100px) {
+    .espace_txt_act{
+        padding-top: 5px;
+    }
 	.img_centre {
 		flex-direction: column-reverse
 	}

@@ -17,7 +17,7 @@ body {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.flex_row h3, p{
+.flex_row h3, p:not(.txt_vign){
     margin: 5px;
     padding: 0px;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .filtres {
-	width: 700px;
+	width: 750px;
 	display: flex;
 	justify-content: space-around;
 	justify-content: space-between
@@ -146,9 +146,6 @@ body {
 
 .container_h picture {
 	height: 175px
-}
-#taille_unique{
-    width: 230px;
 }
 .img_droite {
 	position: relative;
@@ -307,7 +304,13 @@ picture {
 	position: relative;
 	float: left;
 	padding-top: 30px;
-	padding-bottom: 30px
+	padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.espace_bottom_pop{
+    position: absolute;
+    bottom: 10px;
 }
 
 .logo {
@@ -398,10 +401,6 @@ picture {
 	justify-content: space-between
 }
 
-.espace_bottom_pop {
-	position: relative;
-	bottom: 20px
-}
 
 .espace_activite {
 	display: flex;
@@ -416,7 +415,8 @@ picture {
 
 .espace_txt_pop {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 10px;
+    width: 70%;
 }
 
 .espace_top_header {
@@ -430,7 +430,8 @@ picture {
 
 .txt_vign {
 	position: relative;
-	top: -10px
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .icon_vign {
@@ -466,6 +467,20 @@ img:not(.logo, .container_h img, .container_populaires img) {
 .container_populaires img{
     min-height: 100%;
     object-fit: cover;
+}
+.div_fig_pop h3{
+    padding-top: 5px;
+    margin: 0px;
+}
+.i_info{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: 1px solid #d5d5d5;
+    color: #0065fc;
+
 }
 
 @media screen and (max-width:1100px) {
@@ -629,9 +644,6 @@ img:not(.logo, .container_h img, .container_populaires img) {
 	.f_left {
 		margin: 0 20px 0 20px
 	}
-	#taille_unique {
-		width: unset
-	}
 	.hover:hover {
 		border: 0
 	}
@@ -656,7 +668,7 @@ img:not(.logo, .container_h img, .container_populaires img) {
 	}
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
 	.div_fig {
 		height: 230px
 	}
@@ -666,7 +678,6 @@ img:not(.logo, .container_h img, .container_populaires img) {
     .img_droite{
         margin: 0px;
         left: 0;
-        width: 90vw;
     }
 	.div_fig img {
 		width: 100%;
@@ -696,9 +707,6 @@ img:not(.logo, .container_h img, .container_populaires img) {
 	.img_activite_S {
 		height: 115px;
 		width: 100%
-	}
-	#taille_unique {
-		width: 300px
 	}
 	.espace_txt_pop {
 		padding-left: 10px
@@ -731,7 +739,6 @@ img:not(.logo, .container_h img, .container_populaires img) {
         margin: 0px;
     }
     .espace_bottom_pop{
-        bottom: initial;
         padding-left: 5px;
     }
     .txt_vign{
@@ -740,6 +747,16 @@ img:not(.logo, .container_h img, .container_populaires img) {
     }
     .container_h img{
         height: 150px;
+    }
+    .padding_left{
+        width: 100%;
+    }
+    .filtres{
+        justify-content: unset;
+
+    }
+    .espace_txt_pop{
+        padding-top: 10px;
     }
 
 }
